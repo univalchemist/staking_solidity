@@ -1,0 +1,52 @@
+{
+  "name": "lovelace-staking-sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "develop": "truffle develop",
+    "compile": "npm run clean && truffle compile --all",
+    "test": "npm run clean && truffle test",
+    "coverage": "truffle run coverage"
+  },
+  "author": "Applicature",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.2.1-solc-0.7",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "bignumber.js": "^9.0.0",
+    "dotenv": "^8.2.0",
+    "ganache-cli": "^6.10.1",
+    "solc": "^0.7.4",
+    "solhint": "^3.2.0",
+    "truffle": "^5.4.23",
+    "truffle-flattener": "^1.5.0",
+    "truffle-plugin-verify": "^0.5.19",
+    "truffle-test-utils": "^0.1.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@uniswap/v2-core": "^1.0.1",
+    "chai": "^4.2.0",
+    "chai-bn": "^0.2.1",
+    "eslint": "^7.7.0",
+    "eslint-config-google": "^0.14.0",
+    "eth-gas-reporter": "^0.2.22",
+    "eth-sig-util": "^3.0.0",
+    "ethlint": "^1.2.5",
+    "mocha": "^8.1.1",
+    "original-require": "^1.0.1",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.14",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "0.0.5",
+    "solidity-coverage": "^0.7.16",
+    "truffle-assertions": "^0.9.2",
+    "web3": "^1.2.11",
+    "abi-decoder": "^2.2.0"
+  }
+}
